@@ -152,9 +152,9 @@ subquestion: |
   
 fields:
   - What was ${ x.object_possessive('surname at **birth**')}: x.SurnameAtBirth
-    default: x.name.last
+    default: ${x.name.last}
   - What was ${ x.object_possessive('surname just before the time of **marriage** - after you got married you may have changed this name')}: x.SurnameAtMarriage
-    default: x.name.last
+    default: ${x.name.last}
   - At the time of marriage, what was ${ x.object_possessive('martial status')}: x.MaritalStatus
     choices:
       - Unmarried

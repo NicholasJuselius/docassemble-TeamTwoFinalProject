@@ -61,6 +61,29 @@ fields:
     show if: 
       variable: ci_grounds
       is: 'separate'
+  - In what province did you commence your separation: ci_separate_location_province
+    choices:
+      - Alberta: The province of Alberta
+      - British Columbia: The province of British Columbia
+      - Manitoba: The province of Manitoba
+      - New Brunswick: The province of New Brunswick
+      - Newfoundland and Labrador: The province of Newfoundland and Labrador
+      - Northwest Territories: The Northwest Territories
+      - Nova Scotia: The province of Nova Scotia
+      - Nunavut: The territory of Nunavut
+      - Ontario: The province of Ontario
+      - Prince Edward Island: The province of Prince Edward Island
+      - Quebec: The province of Quebec
+      - Saskatchewan: The province of Saskatchewan
+      - Yukon: The Yukon territory
+    show if: 
+      variable: ci_grounds
+      is: 'separate'
+  - In what province did you commence your city: ci_separate_location_city
+    show if: 
+      variable: ci_grounds
+      is: 'separate'
+
 
 ---
 question: Is there a court file open for your divorce?
