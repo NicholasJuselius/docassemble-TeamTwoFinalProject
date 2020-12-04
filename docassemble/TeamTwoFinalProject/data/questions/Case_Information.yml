@@ -23,13 +23,13 @@ fields:
     choices:
       - in Canada: True
       - outside of Canada: False
-  - test: ci_HasCertificate
+  - no label: ci_HasCertificate
     show if: ci_MarriedInCanada
     input type: radio
     choices:
       - I have a copy of my Marriage Cerficate or other official document: True
       - I will order a copy of my official document from a provincial registries office: False
-  - test: ci_HasCertificateNotInCanada
+  - no label: ci_HasCertificateNotInCanada
     show if: 
       variable: ci_MarriedInCanada
       is: False
